@@ -1,5 +1,12 @@
+body {
+    font-family: 'IBM Plex Sans', 'Montserrat', 'Nunito', 'Merriweather', sans-serif;
+    font-size: 1rem;
+    line-height: 1.25;
+    padding: 10px;
+}
+
 h1 {
-    font-size: 2rem;
+    font-size: 1.85rem;
     line-height: 1.2;
     padding: 10px;
 }
@@ -36,7 +43,11 @@ nav li {
 nav a {
     font-weight: bold;
     text-decoration: none; 
-    font-size: 0.95rem;
+    font-size: 0.9rem;
+}
+
+nav a:hover {
+    border: #00274C dashed 2px;
 }
 
 header img {
@@ -66,13 +77,6 @@ footer {
 footer a {
     color: white;
     text-decoration: none; 
-}
-
-body {
-    font-family: Arial, sans-serif;
-    font-size: 1rem;
-    line-height: 1.25;
-    padding: 10px;
 }
 
 body ol {
@@ -163,3 +167,6 @@ th {
     color: #00274C;
 }
 
+*:focus {
+    outline: #00274C dashed 2px;
+}
