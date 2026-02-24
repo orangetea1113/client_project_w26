@@ -1,3 +1,5 @@
+/* I wrote the css after looking at the following page: https://careercenter.umich.edu/article/resume-resources. */
+
 body {
     font-family: 'IBM Plex Sans', 'Montserrat', 'Nunito', 'Merriweather', sans-serif;
     font-size: 1rem;
@@ -31,19 +33,19 @@ h3 {
 
 nav {
     background-color: #dddcf0;
-    padding: 10px 5px 10px 5px;
+    padding: 5px;
     text-align: center;
 }
 
 nav li {
     display: inline;
-    padding-right: 10px;
+    padding-right: 5px;
 }
 
 nav a {
     font-weight: bold;
     text-decoration: none; 
-    font-size: 0.9rem;
+    font-size: 0.95rem;
 }
 
 nav a:hover {
@@ -64,7 +66,7 @@ header > a {
 }
 
 header > a:focus {
-     top: 25px;
+    top: 25px;
 }
 
 footer {
