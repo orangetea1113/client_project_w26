@@ -37,15 +37,22 @@ nav {
     text-align: center;
 }
 
+nav ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6px;
+}
+
 nav li {
-    display: inline;
-    padding-right: 5px;
+    padding: 0;
 }
 
 nav a {
     font-weight: bold;
     text-decoration: none; 
-    font-size: 0.95rem;
+    font-size: 1rem;
+    display: block;
+    padding: 3px;
 }
 
 nav a:hover {
@@ -83,6 +90,30 @@ footer a {
 
 body ol {
     padding-left: 10px;
+}
+
+.steps {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    padding-left: 0;
+    margin: 10px 0 10px 10px;
+}
+
+.steps li {
+    position: relative;
+    border: #00274C solid 2px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.steps li:nth-child(odd) {
+    grid-column: 1 / span 6;
+}
+
+
+.steps li:nth-child(even) {
+    grid-column: 2 / span 6;
 }
 
 main {
