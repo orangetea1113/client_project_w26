@@ -136,6 +136,7 @@
         <hr>
         <section>
             <h2>Networking FAQ</h2>
+            <p> Click on a question to reveal the answer:</p>
             <ul class="list faq-list">
             <li>
                 <strong>How do I follow up after a networking meeting?</strong><br>
@@ -162,5 +163,29 @@
 </html>
 
 <script>
-  document.getElementById("year").innerHTML = new Date().getFullYear();
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    document.querySelectorAll(".faq-list li").forEach((item) => {
+        const question = item.querySelector("strong");
+        if (!question) return;
+
+        const answer = document.createElement("span");
+
+        let node = question.nextSibling;
+        while (node) {
+            const next = node.nextSibling;
+            if (!(node.nodeType === Node.ELEMENT_NODE && node.tagName === "br")) {
+                answer.appendChild(node);
+            }
+            node = next;
+        }
+
+        item.appendChild(answer);
+        answer.style.display = "none";
+        question.style.cursor = "pointer";
+
+        question.addEventListener("click", () => {
+            answer.style.display = answer.style.display === "none" ? "inline" : "none";
+        });
+    });
 </script>
