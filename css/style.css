@@ -405,7 +405,6 @@ figcaption {
 
     .five-steps li {
         position: relative;
-        z-index: 1;
         padding: 52px 10px 15px 10px;
         border-radius: 12px;
         background-color: #ffffff;
