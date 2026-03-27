@@ -5,6 +5,9 @@ body {
     font-size: 1rem;
     line-height: 1.25;
     padding: 10px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 p {
@@ -93,6 +96,7 @@ footer {
     color: white;
     padding: 20px 10px 20px 10px;
     text-align: center;
+    margin-top: auto;
 }
 
 footer a {
@@ -149,6 +153,7 @@ main {
     grid-template-columns: repeat(3, 1fr);
     gap: 5px;
     padding: 10px;
+    flex: 1;
 }
 
 main section {
@@ -345,6 +350,8 @@ figcaption {
     grid-template-columns: 1fr;
     gap: 14px;
     align-content: start;
+    max-width: 760px;
+    margin: 0 auto;
 }
 
 .error-warning {
@@ -386,41 +393,6 @@ figcaption {
 .error-home-link:focus {
     background-color: #FFCB05;
     color: #00274C;
-}
-
-.error-links-section {
-    border-radius: 18px;
-    padding: 14px;
-    border: 2px solid #00274C;
-}
-
-.error-links-section h3 {
-    margin-top: 0;
-}
-
-.error-links {
-    list-style: none;
-    margin: 10px 0 0 0;
-    padding-left: 0;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 10px;
-}
-
-.error-links li a {
-    display: block;
-    padding: 10px 12px;
-    border-radius: 10px;
-    border: 1px solid #00274C;
-    color: #00274C;
-    text-decoration: none;
-    font-weight: 700;
-}
-
-.error-links li a:hover,
-.error-links li a:focus {
-    background-color: #00274C;
-    color: #ffffff;
 }
 
 /* Tablet/Desktop View */
@@ -536,16 +508,12 @@ figcaption {
     }
 
     .error-main {
-        grid-template-columns: repeat(6, 1fr);
-        gap: 18px;
+        grid-template-columns: 1fr;
+        max-width: 860px;
     }
 
     .error-warning {
-        grid-column: 1 / span 4;
+        grid-column: 1 / -1;
         padding: 26px 24px;
-    }
-
-    .error-links-section {
-        grid-column: 5 / -1;
     }
 }
