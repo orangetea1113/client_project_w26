@@ -61,25 +61,23 @@
             <p>
                 Most initial screens and tech interviews happen remotely. Treat your setup as part of your professional appearance.
             </p>
-            
-            <iframe 
-            src="https://www.youtube.com/embed/syfPzQWwbTk" title="Ace the Virtual Interview">
-            </iframe>
-
             <div>
-                <ul>
-                    <li><strong>Eye Contact:</strong> Look at the <em>camera lens</em>, not the screen, when you are speaking.</li>
+                <ul class="steps">
+                    <li><strong>Eye Contact:</strong> Look at the camera lens, not the screen, when you are speaking.</li>
                     <li><strong>Lighting:</strong> Face a window or light source. Avoid strong backlighting (which makes you look like a shadow).</li>
                     <li><strong>Tech Check:</strong> Test your microphone and internet connection 10 minutes before the call.</li>
                     <li><strong>Digital Background:</strong> If your room is messy, use a blurred background or a professional virtual background.</li>
                 </ul>
             </div>
+            <iframe 
+            src="https://www.youtube.com/embed/syfPzQWwbTk" title="Ace the Virtual Interview" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
         </section>
         <hr>
         <section>
             <h2>Practice & Resources</h2>
             <h3>Interview Preparation & Execution</h3>
-            <ul>
+            <ul class="list">
                 <li>
                     <a href="https://docs.google.com/document/d/16HY__RHplZMBGhWmM6OavMvXXwiuNMxSPsfGCTIKd-o/edit?tab=t.0">Tell Me About Yourself (TMAY):</a> A guide to crafting a concise and impactful TMAY response.
                 </li>
@@ -95,7 +93,7 @@
             </ul>
 
             <h3>Technical, Design, & Case Interviews</h3>
-            <ul>
+            <ul class="list">
                 <li>
                     <a href="https://docs.google.com/document/d/1qys4-VL7LVX-8HG-uPVUV0w_G5uKsyQ_cK7ZDsxle4s/edit?usp=sharing">Technical Interview Prep Guide:</a> Tips for succeeding in technical interviews.
                 </li>
@@ -106,8 +104,9 @@
                     <a href="https://docs.google.com/document/d/1MPPjQ8j2c6LS4XrUXCctXYyoUaS1XJ7PUk6f5sxCVLY/edit?usp=sharing">Case Interview Prep Guide:</a> Tips for succeeding in case study interviews.
                 </li>
             </ul>
-    
-            <h3>Video Resource: Ace the Data Science Interview</h2>
+        </section>
+        <section>
+            <h3>Video Resource: Ace the Data Science Interview</h3>
             <p>Watch this short guide on how to introduce yourself confidently and ace your data science interview.</p>
             
             <video controls>
@@ -119,7 +118,7 @@
         <hr>
         <section>
             <h2>Interview FAQ</h2>
-            <ul>
+            <ul class="list faq-list">
                 <li>
                     <strong>How should I prepare for an interview?</strong><br>
                     Research the company, review the job description, practice common questions, and prepare your own questions to ask.
@@ -141,10 +140,14 @@
     </main>
 
     <footer>
-        <p>University of Michigan School of Information | <a href="https://umich.instructure.com/courses/137916">UMSI Career Development Office </a></p>
+      <p>© Copyrights <span id="year"></span> by University of Michigan School of Information. All rights reserved. | <a href="https://umich.instructure.com/courses/137916">UMSI Career Development Office </a></p>
     </footer>
 
     <!-- Content taken & modified from UMGPT with the prompt, "provide me with some content and resources for an interviews page" - this was after I had asked for content for the interviews page.
         UMGPT. (2025). UMGPT (GPT-4.1 August 25th version) [Large language model]. -->
 </body>
 </html>
+
+<script>
+  document.getElementById("year").innerHTML = new Date().getFullYear();
+</script>
